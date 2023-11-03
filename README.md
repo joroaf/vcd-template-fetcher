@@ -38,9 +38,9 @@ python get_templates.py --vcd-host <VCD_HOST> --username <USERNAME> --password <
 - `--vcd-host`: The URL of the vCD instance.
 - `--username`: Your administrator username for vCD authentication.
 - `--password`: Your administrator password for vCD authentication.
+- `--metadata-key`: The key of the metadata property to filter on.
 
 Optional arguments:
-- `--metadata-key`: The key of the metadata property to filter on.
 - `--metadata-value`: The value of the metadata property to filter on.
 - `--api-version`: The vCD API version (default is '37.0').
 - `--no-verify-ssl`: Disable SSL certificate verification (default is False).
@@ -48,7 +48,7 @@ Optional arguments:
 ## Example
 
 ```bash
-python script.py --vcd-host https://vcd.example.com --username admin_username --password admin_password --metadata-key your.metadata.key
+python get_templates.py --vcd-host https://vcd-l-01a.corp.local --username administrator --password='YOUR_PASSWORD' --metadata-key your.metadata.key --no-verify-ssl
 ```
 
 The script will fetch vApp templates with the specified metadata property and write the results to a CSV file.
